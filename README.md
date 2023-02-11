@@ -21,6 +21,8 @@ WHEN asked for character types to include in the password
 * THEN the password is either displayed in an alert or written to the page
 
 ## Work Completed 
+* made variables within javascript to include upper and lower case letter, a numberic values of 0 - 9, and finally special charaters
+
 
 ## Website 
 
