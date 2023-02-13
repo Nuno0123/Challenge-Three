@@ -83,7 +83,12 @@ function determinelength(){
       }else if (specialcheck === "yes" || specialcheck === "y"){
         specialcheck = true;
         return specialcheck;
+      
 
+      }else if (specialcheck === "no" || specialcheck === "n"){
+      specialcheck = false;
+      return specialcheck;
+      
       }else {
         alert("Answer Yes or No");
         determinespecial();
