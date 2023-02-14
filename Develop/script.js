@@ -14,7 +14,7 @@ var generateBtn = document.querySelector("#generate");
 //Created box messages to appear when you click "Generate Password" that will give the user options for different password criterias, the following function is trying to determine the length of the password. Here the criteria stated the password must be within 8-128 characters. 8 being the minium all the way through to 128 characters.   
 function determinelength(){
   passwordlength = prompt("How long would you like your password to be? (Passwords must be between 8-128 characters)")
-     // Here I' m putting that the passwordlength is less than 8 so if the user tries to put a numeric value of something less than 8 it will alert the user with this message "Passwords must be between 8-128 characters" same thing goes for if the passwordlength is greater(>) 128, the same message applies. Finally, if the user accidentaly hits a something other than a numer (thats what isNaN is for) it will also alert the user with the same message finally once each of following have been filled correctly the user will get another 
+     // Here we're putting that the passwordlength is less than 8 so if the user tries to put a numeric value of something less than 8 it will alert the user with this message "Passwords must be between 8-128 characters" same thing goes for if the passwordlength is greater(>) 128, the same message applies. Finally, if the user accidentaly hits a something other than a numer (thats what isNaN is for) it will also alert the user with the same message finally once each of following have been filled correctly the user will get another 
     if (passwordlength<8){
       alert("Passwords must be between 8-128 characters");
       determinelength();
@@ -29,7 +29,7 @@ function determinelength(){
       }
       return passwordlength;
     }
-// This function below is creating the prompt to ask the user whether or not they want uppercase lettering  within their password. If the following 3 prompts are answered as no then the website should generate a password with only lowercase lettering. I'm also giving my variable uppercasecheck the value of a prompt message. Each following function is designed so that if the user were to write anything other than yes or no, an alert will pop up telling them to answer yes or now this goes for lines 37-39, 49-51, 68-71, 92-95
+// This function below is creating the prompt to ask the user whether or not they want uppercase lettering  within their password. If the following 3 prompts are answered as no then the website should generate a password with only lowercase lettering. We're also giving our variable uppercasecheck the value of a prompt message. Each following function is designed so that if the user were to write anything other than yes or no, an alert will pop up telling them to answer yes or now this goes for lines 37-39, 49-51, 68-71, 92-95
     function determineuppercase(){
       uppercasecheck = prompt("Would you like your password to include uppercase letters? (Yes or No)");
        uppercasecheck = uppercasecheck.toLowerCase();
@@ -96,7 +96,7 @@ function determinelength(){
       return specialcheck;
 
     }
-
+    // Creating the function in which will generate the password for us, this function will determine on the functions we created: determinelength, determineuppercase, determinenumbers, and determinespecial. 
     function generatePassword(){
       determinelength();
       console.log(passwordlength);
@@ -107,7 +107,7 @@ function determinelength(){
       determinespecial();
       console.log(specialcheck);
       
-      // Here I'm creating the outcomes of what could be selected by the user. 
+      // Here we're creating the outcomes of what could be selected by the user. We're creating if and else if statements to help the webpage generate different passwords based on the critera selected. So if yes selected for each of the following criteria then char (lowercasecharacters) should be added to each one of the following if statements because of the add += operator (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition_assignment) I used this site help me better understand the concept of the operator.  
       var char = lowercasecharacters;
       var password = "";
       if (uppercasecheck && numbercheck && specialcheck){
@@ -150,3 +150,5 @@ function writePassword() {
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+// As a guide to help with this homework assignment I was able to find a previous student's work in which I looked over everything and deconstucted it to better help me understand the assignment. Because I did use this students code as a guide to my own I am citing their work just to be catious and state I'm not using their work as my own. I simply reviewed it , deconstructed it to understand how it works and created my own based off the code I reviewed and the things I learned in class. I give all credit to the original owner (https://github.com/JustinMarchi/Homework-3-Password-Generator.github.io)
