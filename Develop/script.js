@@ -134,7 +134,7 @@ function determinelength(){
       }else{
         char === lowercasecharacters;
       } 
-      
+
       for(var i = 0; i < passwordlength; i++){
         password += char.charAt(Math.floor(Math.random() * char.length));
       }
