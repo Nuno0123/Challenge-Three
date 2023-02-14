@@ -27,6 +27,6 @@ WHEN asked for character types to include in the password
 ## Website 
 https://nuno0123.github.io/Password-Generator-Challenge/
 ## Screenshot 
-! [screenshot] (/Develop/images/nuno0123.github.io_Password-Generator-Challenge_.png)
+! [screenshot](/Develop/images/nuno0123.github.io_Password-Generator-Challenge_.png)
 ## Contact 
 [Nestor Montañez on Github](https://github.com/Nuno0123)
