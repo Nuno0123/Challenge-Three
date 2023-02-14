@@ -38,11 +38,11 @@ function determinelength(){
         alert("Answer Yes or No");
         determineuppercase();
 
-       }else if (uppercasecheck === "yes" || uppercasecheck === "y"){
+       }else if (uppercasecheck === "yes"){
         uppercasecheck = true;
         return uppercasecheck
 
-       }else if (uppercasecheck === "no" || uppercasecheck === "n"){
+       }else if (uppercasecheck === "no"){
         uppercasecheck = false;
         return uppercasecheck;
 
@@ -57,11 +57,11 @@ function determinelength(){
       numbercheck = prompt("Would you like to include numbers within your password? (Yes or No)");
        numbercheck = numbercheck.toLowerCase();
 
-       if (numbercheck === "yes" || numbercheck ==="y"){
+       if (numbercheck === "yes"){
         numbercheck = true;
         return numbercheck;
 
-       }else if (numbercheck === "no" || numbercheck ==="n"){
+       }else if (numbercheck === "no"){
         numbercheck = false;
         return numbercheck
 
@@ -80,12 +80,12 @@ function determinelength(){
         alert("Answer Yes or No");
         determinespecial();
 
-      }else if (specialcheck === "yes" || specialcheck === "y"){
+      }else if (specialcheck === "yes"){
         specialcheck = true;
         return specialcheck;
       
 
-      }else if (specialcheck === "no" || specialcheck === "n"){
+      }else if (specialcheck === "no"){
       specialcheck = false;
       return specialcheck;
       
