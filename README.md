@@ -22,11 +22,11 @@ WHEN asked for character types to include in the password
 
 ## Work Completed 
 * Made variables within javascript to include upper and lower case letters, numberic values of 0 - 9, and finally special charaters
-* 
+* Created prompts for each function in javascript, so now user of the site is prompt with questions on how they would like to customize their password.
 
 ## Website 
-
+https://nuno0123.github.io/Password-Generator-Challenge/
 ## Screenshot 
-
+! [screenshot] (/Develop/images/nuno0123.github.io_Password-Generator-Challenge_.png)
 ## Contact 
 [Nestor Montañez on Github](https://github.com/Nuno0123)

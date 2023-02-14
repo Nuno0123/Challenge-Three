@@ -29,11 +29,11 @@ function determinelength(){
       }
       return passwordlength;
     }
-// This function below is creating the prompt to ask the user whether or not they want uppercase lettering  within their password. If the following 3 prompts are answered as no then the website should generate a password with only lowercase lettering.  
+// This function below is creating the prompt to ask the user whether or not they want uppercase lettering  within their password. If the following 3 prompts are answered as no then the website should generate a password with only lowercase lettering. I'm also giving my variable uppercasecheck the value of a prompt message.
     function determineuppercase(){
       uppercasecheck = prompt("Would you like your password to include uppercase letters? (Yes or No)");
-       uppercasecheck= uppercasecheck.toLowerCase();
-
+       uppercasecheck = uppercasecheck.toLowerCase();
+        // Here we are saying if uppercasecheck 
        if (uppercasecheck === null || uppercasecheck === ""){
         alert("Answer Yes or No");
         determineuppercase();
@@ -147,44 +147,5 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
   passwordText.value = password1;
 }
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
-  
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
