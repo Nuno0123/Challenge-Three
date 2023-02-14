@@ -27,6 +27,7 @@ WHEN asked for character types to include in the password
 * Created array for uppercase, lowercase and special characters to be accessed 
 * Created return for each function if the user does not fulfull the criteria asked of them 
 * Made it so password appear within the box on webpage
+* Added comments to best explain the work done on the JS
 
 
  
