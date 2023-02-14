@@ -29,11 +29,11 @@ function determinelength(){
       }
       return passwordlength;
     }
-// This function below is creating the prompt to ask the user whether or not they want uppercase lettering  within their password. If the following 3 prompts are answered as no then the website should generate a password with only lowercase lettering. I'm also giving my variable uppercasecheck the value of a prompt message.
+// This function below is creating the prompt to ask the user whether or not they want uppercase lettering  within their password. If the following 3 prompts are answered as no then the website should generate a password with only lowercase lettering. I'm also giving my variable uppercasecheck the value of a prompt message. Each following function is designed so that if the user were to write anything other than yes or no, an alert will pop up telling them to answer yes or now this goes for lines 37-39, 49-51, 68-71, 92-95
     function determineuppercase(){
       uppercasecheck = prompt("Would you like your password to include uppercase letters? (Yes or No)");
        uppercasecheck = uppercasecheck.toLowerCase();
-        // Here we are saying if uppercasecheck 
+ 
        if (uppercasecheck === null || uppercasecheck === ""){
         alert("Answer Yes or No");
         determineuppercase();
@@ -52,7 +52,7 @@ function determinelength(){
       }
       return uppercasecheck;
     }
-
+    // The funtion below helps determining if the user wants to include numbers in their password. 
     function determinenumbers(){
       numbercheck = prompt("Would you like to include numbers within your password? (Yes or No)");
        numbercheck = numbercheck.toLowerCase();
@@ -71,7 +71,7 @@ function determinelength(){
        }
        return numbercheck;
     }
-
+    // Same here but with special characters 
     function determinespecial(){
       specialcheck = prompt("Would you like to include special charatcters within your password? (Yes or No)");
       specialcheck = specialcheck.toLowerCase();
@@ -106,7 +106,8 @@ function determinelength(){
       console.log(numbercheck);
       determinespecial();
       console.log(specialcheck);
-
+      
+      // Here I'm creating the outcomes of what could be selected by the user. 
       var char = lowercasecharacters;
       var password = "";
       if (uppercasecheck && numbercheck && specialcheck){
